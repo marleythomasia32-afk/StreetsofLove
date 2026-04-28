@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-  <title>My Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Video Pagina</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    video {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+  </style>
 </head>
 <body>
 
-<h1>My WebM Video</h1>
+  <h1>Mijn Video</h1>
 
-<video controls width="640">
-  <source src="video.webm" type="video/webm">
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <video controls autoplay muted loop>
+    <source src="Users/susil/Downloads/macrooo/op/video.webm" type="video/webm">
+    <source src="Users/susil/Downloads/macrooo/op/video.mp4" type="video/mp4">
+    Je browser ondersteunt deze video niet.
+  </video>
 
 </body>
 </html>
